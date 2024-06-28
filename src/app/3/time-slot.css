@@ -1,0 +1,18 @@
+.slot-button{
+    width: Fixed (79px)px;
+    height: Fixed (40px)px;
+    padding: 11px 4px 11px 4px;
+    border-radius: 4px;
+    border: 1px ;
+    background-color: #F2EAF9;
+    border: 1px solid #B18FCA;
+
+    
+    
+
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}

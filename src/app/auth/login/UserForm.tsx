@@ -21,7 +21,7 @@ export const UserForm = () => {
     window.location.reload();
     if (email == "test123@gmail.com" && password == "Test@123") {
       Cookies.set("mofi_token", JSON.stringify(true));
-      router.push(`/en/dashboard/default_dashboard`);
+      router.push(`/1`);
       toast.success("login successful");
     } else {
       alert("Please Enter Valid Email Or Password");
