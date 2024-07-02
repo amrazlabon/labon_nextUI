@@ -79,8 +79,8 @@ const UserFlow = () => {
 
                     <div style={{marginTop:'1rem',textAlign:'center'}}>
 
-<Link href='/en/dashboard/default_dashboard'>
-                    <button style={{padding:'1rem',backgroundColor:'#AE7FD1',borderColor:'#AE7FD1',borderRadius:'15px'}}>Dashboard</button>
+<Link href='/4'>
+                    <button style={{padding:'1rem',backgroundColor:'#AE7FD1',borderColor:'#AE7FD1',borderRadius:'15px'}}>Next</button>
 </Link>
     </div>
 
