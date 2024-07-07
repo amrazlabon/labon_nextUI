@@ -5,9 +5,18 @@ import { UserForm } from "../auth/login/UserForm";
 import './check-style.css'
 import BorderBottom from "@/Components/BonusUi/CreativCard/BorderBottom";
 import Link from "next/link";
+import { toast } from "react-toastify";
 // import { UserForm } from "./UserForm";
 
 const UserLogin = () => {
+
+    const notify = () => {
+        console.log("if that is indie")
+        toast.success("Fill all fields!", {
+          position: "top-center",
+          autoClose: 2000,
+        });
+      };
     return (
         <Container fluid className="p-3">
 

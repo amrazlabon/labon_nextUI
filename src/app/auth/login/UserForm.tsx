@@ -9,6 +9,7 @@ import { Button, Form, FormGroup, Input, Label } from "reactstrap";
 import imageOne from "../../../../public/assets/images/logo/logo.png";
 import imageTwo from "../../../../public/assets/images/logo/logo_dark.png";
 import { UserSocialApp } from "./UserSocialApp";
+import axios from "axios";
 
 export const UserForm = () => {
   const { i18LangStatus } = useAppSelector((store) => store.langSlice);
@@ -21,12 +22,58 @@ export const UserForm = () => {
     window.location.reload();
     if (email == "test123@gmail.com" && password == "Test@123") {
       Cookies.set("mofi_token", JSON.stringify(true));
-      router.push(`/1`);
+      router.push(`/10`);
       toast.success("login successful");
     } else {
       alert("Please Enter Valid Email Or Password");
     }
   };
+
+  const notify = () => {
+    console.log("if that is indie")
+    toast.success("Logged In Succesfully", {
+      position: "top-center",
+      autoClose: 2000,
+    });
+  };
+  // const formSubmitHandle = async (event : any) => {
+  //   event.preventDefault();
+  //   console.log("inside");
+    
+  //   try {
+
+  //     const inputData = { personal_email : email }
+  //           const response = await axios.post('/api/login', inputData);
+  //           // const res = respose.data.result;
+  //           // setEducationData([...educationData, res])
+  //           // return response;
+  //     // const response = await fetch("http://0.0.0.0:37000/users/email", {
+  //     //   method: "POST",
+  //     //   headers: {
+  //     //     "Content-Type": "application/json",
+  //     //   },
+  //     //   body: JSON.stringify({ personal_email : email }),
+  //     // });
+  //     // console.log("response",response)
+
+  //     // if (!response.ok) {
+  //     //   throw new Error("Network response was not ok");
+  //     // }
+
+  //     // const data = await response.json();
+
+  //     if (response) {
+  //       Cookies.set("mofi_token", JSON.stringify(true));
+  //       router.push(`/10`);
+  //       toast.success("Login successful");
+  //     } else {
+  //       toast.error('data.message' || "Invalid email or password");
+  //     }
+  //   } catch (error) {
+  //     toast.error("An error occurred: " + error.message);
+  //   }
+  // };
+
 
 
   return (

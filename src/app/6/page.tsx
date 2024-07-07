@@ -110,8 +110,22 @@ const dashboard = () => {
 
                 <div style={{marginTop:'1rem',textAlign:'center'}}>
 
-<Link href='/en/dashboard/default_dashboard'>
-                    <button style={{padding:'1rem',backgroundColor:'#AE7FD1',borderColor:'#AE7FD1',borderRadius:'15px'}}>Dashboard</button>
+<Link href='/12'>
+                    <button style={{padding:'1rem',backgroundColor:'#AE7FD1',borderColor:'#AE7FD1',borderRadius:'15px'}}>Patient Information</button>
+</Link>
+    </div>
+
+    <div style={{marginTop:'1rem',textAlign:'center'}}>
+
+<Link href='/13'>
+                    <button style={{padding:'1rem',backgroundColor:'#AE7FD1',borderColor:'#AE7FD1',borderRadius:'15px'}}>Booking Information</button>
+</Link>
+    </div>
+
+    <div style={{marginTop:'1rem',textAlign:'center'}}>
+
+<Link href='/11'>
+                    <button style={{padding:'1rem',backgroundColor:'#AE7FD1',borderColor:'#AE7FD1',borderRadius:'15px'}}>Add Tests</button>
 </Link>
     </div>
 

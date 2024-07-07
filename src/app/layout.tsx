@@ -1,6 +1,7 @@
 import "../../src/index.scss";
 import NoSsr from "@/utils/NoSsr";
 import MainProvider from "./MainProvider";
+import { ToastContainer } from "react-toastify";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -15,7 +16,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjeJEPREBQFvAIqDSZliF0WjQrCld-Mh0"></script>
       </head>
       <body suppressHydrationWarning={true}>
-        <NoSsr><MainProvider>{children}</MainProvider></NoSsr>
+        <NoSsr><MainProvider>{children}
+          <ToastContainer />
+          </MainProvider></NoSsr>
       </body>
     </html>
   );

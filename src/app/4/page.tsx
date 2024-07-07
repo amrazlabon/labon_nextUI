@@ -107,7 +107,7 @@ const summary = () => {
 
                 </div>
                 <div style={{ marginTop: '1rem' }}>
-                    <Link href='/5'>
+                    <Link href='/8'>
                     <button style={{ color: 'white', width: '100%', height: '56', padding: '12px 0px 12px 0px', backgroundColor: '#AE7FD1', border: 'none', borderRadius: '5px' }}>Continue &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {'>'}</button>
                     </Link>
                 </div>

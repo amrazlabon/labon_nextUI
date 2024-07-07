@@ -1,0 +1,32 @@
+/* patient-details.css */
+
+.login-dark {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 601px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .content {
+        max-width: 1200px;
+        flex: 1;
+    }
+    
+    .empty-space {
+        flex: 1;
+        background-color: #f8f9fa;
+    }
+}

@@ -1,0 +1,59 @@
+.family-member-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    overflow: hidden;
+    /* display: flex; */
+    align-items: center;
+    padding: 1rem;
+}
+
+.family-member-card .card-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom-style: groove;
+}
+
+.family-member-card .profile-image img {
+    width: 6rem;
+}
+
+.family-member-card .details {
+    flex: 1;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+.family-member-card .details h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.family-member-card .details .relationship {
+    margin: 0;
+    color: #888;
+    font-size: 14px;
+}
+
+.family-member-card .details .tests-done {
+    margin: 0.5rem 0;
+    font-size: 14px;
+}
+
+.family-member-card .details .upcoming-test {
+    color: #28a745;
+    font-size: 14px;
+}
+
+.family-member-card .details .no-upcoming-tests {
+    color: #dc3545;
+    font-size: 14px;
+}
+
+.family-member-card .arrow-icon {
+    font-size: 24px;
+    color: #888;
+}
